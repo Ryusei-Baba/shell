@@ -9,8 +9,15 @@ BAG_NAME="rosbag2_$(date +%Y%m%d_%H%M%S)"
 # 記録するトピックのリスト
 TOPICS=(
     "/vectornav/pose"
-    "/zed/zed_node/point_cloud/cloud_registered"
-    "/zed/zed_node/rgb/image_rect_color"
+    "/zed_node/rgb/image_rect_color"
+    "/lane_following_visualization"
+    "/red_pylon_area"
+    "/cmd_vel"
+    "/image_sam"
+    "/image_gdino"
+    "/image_optical_flow"
+    "/lang_sam_detections"
+    "/multi_view"
 )
 
 # 保存先ディレクトリを作成（存在しない場合のみ）
